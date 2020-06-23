@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <cmsmagento>
+                <model>CmsmagentoPayment\Cmsmagento\Model\Cmsmagento</model>
+                <title>Cmsmagento</title>
+                <service_provider>Cmsmagento_paisa</service_provider>
+             
+                <production_url backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+               
+                <sandbox_url backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <environment>sandbox</environment>
+                <account_type>cmsmagentomoney</account_type>
+                <redirect_url>cmsmagento/standard/redirect</redirect_url>
+                <return_url>cmsmagento/standard/response</return_url>
+                <cancel_url>cmsmagento/standard/cancel</cancel_url>
+                <merchant_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <toid backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <totype backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <partenerid backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <ipaddr backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+               
+            </cmsmagento>
+        </payment>
+    </default>
+</config>
